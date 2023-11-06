@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Loving
-  - Surprise
-  - Laughter
-  - Sadness
-  - Anger
+  tags: []
   layers:
   - Default
   - TransparentFX
