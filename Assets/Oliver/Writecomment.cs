@@ -6,6 +6,8 @@ using TMPro;
 
 public class Writecomment : MonoBehaviour
 {
+    //public GameObject commentCanvas;
+    
     public Button addComment;
     public GameObject write_a_comment;
     public TMP_InputField inputField;
@@ -27,6 +29,8 @@ public class Writecomment : MonoBehaviour
 
     void Start()
     {
+        //commentCanvas.SetActive(false);
+        
         Text numberofTopLikes = topLikeButton.GetComponentInChildren<Text>();
         Text numberofLikes = likeButton.GetComponentInChildren<Text>();
 

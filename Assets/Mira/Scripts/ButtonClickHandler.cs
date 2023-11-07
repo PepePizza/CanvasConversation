@@ -12,39 +12,52 @@ public class ButtonClickHandler : MonoBehaviour
     public GameObject anger;
 
     //The amount the size should increase by
-    public float increaseAmount = 5f;
+    public float increaseAmount = 50f;
+    public float increaseHeartAmount = 25f;
     
-    //
-    public CanvasGroup canvasGroup;
-
+    
+    //public CanvasGroup canvasGroup;
+    public GameObject emojisSelectorCanvas;
+    public GameObject emojisCanvas;
+    
     public void OnHeartClick()
     {
-        IncreaseSize(loving);
-        CloseCanvas();
+        IncreaseHeartSize(loving);
+        //CloseCanvas();
+        emojisSelectorCanvas.SetActive(false);
+        emojisCanvas.SetActive(true);
     }
 
     public void OnLaughingClick()
     {
         IncreaseSize(laughter);
-        CloseCanvas();
+        //CloseCanvas();
+        emojisSelectorCanvas.SetActive(false);
+        emojisCanvas.SetActive(true);
     }
 
     public void OnSurprisedClick()
     {
         IncreaseSize(surprise);
-        CloseCanvas();
+        //CloseCanvas();
+        emojisSelectorCanvas.SetActive(false);
+        emojisCanvas.SetActive(true);
     }
 
     public void OnSadClick()
     {
         IncreaseSize(sadness);
-        CloseCanvas();
+        //CloseCanvas();
+        emojisSelectorCanvas.SetActive(false);
+        emojisCanvas.SetActive(true);
     }
 
     public void OnAngryClick()
     {
         IncreaseSize(anger);
-        CloseCanvas();
+        //CloseCanvas();
+        emojisSelectorCanvas.SetActive(false);
+        emojisCanvas.SetActive(true);
     }
 
     void IncreaseSize(GameObject obj)
@@ -52,13 +65,20 @@ public class ButtonClickHandler : MonoBehaviour
         Vector3 currentSize = obj.transform.localScale;
         obj.transform.localScale = new Vector3(currentSize.x + increaseAmount, currentSize.y + increaseAmount, currentSize.z + increaseAmount);
     }
+    
+    void IncreaseHeartSize(GameObject obj)
+    {
+        Vector3 currentSize = obj.transform.localScale;
+        obj.transform.localScale = new Vector3(currentSize.x + increaseHeartAmount, currentSize.y + increaseHeartAmount, currentSize.z + increaseHeartAmount);
+    }
 
-    void CloseCanvas()
+
+    /*void CloseCanvas()
     {
         // Set canvas transparency to fully transparent (invisible).
         canvasGroup.alpha = 0f;
         
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
-    }
+    }*/
 }
