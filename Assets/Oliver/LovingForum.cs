@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Writecomment : MonoBehaviour
+public class LovingForum : MonoBehaviour
 {
     //public GameObject commentCanvas;
     
