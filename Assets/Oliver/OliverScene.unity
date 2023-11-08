@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -163,7 +163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &39724742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,10 +667,10 @@ RectTransform:
   m_Father: {fileID: 1058055326}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 106, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &110230769
 MonoBehaviour:
@@ -766,6 +766,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110230767}
   m_CullTransparentMesh: 1
+--- !u!1 &113050757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113050758}
+  m_Layer: 5
+  m_Name: LaughingForum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &113050758
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113050757}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 532909566}
+  m_Father: {fileID: 1354141930}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &118785624 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
@@ -1287,7 +1324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &190544198
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1397,12 +1434,12 @@ GameObject:
   - component: {fileID: 247881146}
   - component: {fileID: 247881150}
   m_Layer: 5
-  m_Name: AngryForum
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &247881146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,8 +1515,8 @@ RectTransform:
   m_Children:
   - {fileID: 1857393960}
   - {fileID: 77905675}
-  m_Father: {fileID: 1354141930}
-  m_RootOrder: 3
+  m_Father: {fileID: 665235312}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1728,7 +1765,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 552333597}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Writecomment, Assembly-CSharp
         m_MethodName: OnTopLikeButtonClick
         m_Mode: 1
@@ -2296,36 +2333,14 @@ GameObject:
   - component: {fileID: 380388858}
   - component: {fileID: 380388857}
   - component: {fileID: 380388856}
-  - component: {fileID: 380388855}
+  - component: {fileID: 380388860}
   m_Layer: 5
-  m_Name: SurprisedForum
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &380388855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380388854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e887cfa0a895d614785b6a165380d29f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  addComment: {fileID: 947571092}
-  write_a_comment: {fileID: 1229532509}
-  inputField: {fileID: 1229532511}
-  textArea: {fileID: 1308587329}
-  topLikeButton: {fileID: 1524335537}
-  likeButton: {fileID: 2118783994}
-  numberofTopLikes: {fileID: 1307243678}
-  numberofLikes: {fileID: 171795637}
-  m_ContentContainer: {fileID: 2072655960}
-  m_ItemPrefab: {fileID: 1229532509}
+  m_IsActive: 1
 --- !u!114 &380388856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2401,14 +2416,36 @@ RectTransform:
   m_Children:
   - {fileID: 139216539}
   - {fileID: 874694094}
-  m_Father: {fileID: 1354141930}
-  m_RootOrder: 1
+  m_Father: {fileID: 1141974438}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &380388860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380388854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52a3db2a906f874085c74d6f07977c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addComment: {fileID: 947571092}
+  write_a_comment: {fileID: 1229532509}
+  inputField: {fileID: 1229532511}
+  textArea: {fileID: 1308587329}
+  topLikeButton: {fileID: 1524335537}
+  likeButton: {fileID: 2118783994}
+  numberofTopLikes: {fileID: 1307243678}
+  numberofLikes: {fileID: 171795637}
+  m_ContentContainer: {fileID: 2072655960}
+  m_ItemPrefab: {fileID: 1229532509}
 --- !u!1 &406066585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3223,10 +3260,10 @@ RectTransform:
   m_Father: {fileID: 1058055326}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 974, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446033099
 MonoBehaviour:
@@ -3570,36 +3607,14 @@ GameObject:
   - component: {fileID: 532909565}
   - component: {fileID: 532909564}
   - component: {fileID: 532909563}
-  - component: {fileID: 532909562}
+  - component: {fileID: 532909567}
   m_Layer: 5
-  m_Name: LaughingForum
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &532909562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532909561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e887cfa0a895d614785b6a165380d29f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  addComment: {fileID: 788903014}
-  write_a_comment: {fileID: 142783067}
-  inputField: {fileID: 142783069}
-  textArea: {fileID: 118785624}
-  topLikeButton: {fileID: 1375484855}
-  likeButton: {fileID: 12375068}
-  numberofTopLikes: {fileID: 420780052}
-  numberofLikes: {fileID: 51592649}
-  m_ContentContainer: {fileID: 982619963}
-  m_ItemPrefab: {fileID: 142783067}
+  m_IsActive: 1
 --- !u!114 &532909563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3675,7 +3690,7 @@ RectTransform:
   m_Children:
   - {fileID: 611457504}
   - {fileID: 99677889}
-  m_Father: {fileID: 1354141930}
+  m_Father: {fileID: 113050758}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3683,6 +3698,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &532909567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532909561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 589e1d19c31012745a1211eb9e865d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addComment: {fileID: 788903014}
+  write_a_comment: {fileID: 142783067}
+  inputField: {fileID: 142783069}
+  textArea: {fileID: 118785624}
+  topLikeButton: {fileID: 1375484855}
+  likeButton: {fileID: 12375068}
+  numberofTopLikes: {fileID: 420780052}
+  numberofLikes: {fileID: 51592649}
+  m_ContentContainer: {fileID: 982619963}
+  m_ItemPrefab: {fileID: 142783067}
 --- !u!1 &533913051
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,36 +3867,14 @@ GameObject:
   - component: {fileID: 552333600}
   - component: {fileID: 552333599}
   - component: {fileID: 552333598}
-  - component: {fileID: 552333597}
+  - component: {fileID: 552333602}
   m_Layer: 5
-  m_Name: SadForum
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &552333597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552333596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e887cfa0a895d614785b6a165380d29f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  addComment: {fileID: 1969722028}
-  write_a_comment: {fileID: 1431220876}
-  inputField: {fileID: 1431220878}
-  textArea: {fileID: 29809592}
-  topLikeButton: {fileID: 267530560}
-  likeButton: {fileID: 692318568}
-  numberofTopLikes: {fileID: 859430171}
-  numberofLikes: {fileID: 1457490357}
-  m_ContentContainer: {fileID: 68531551}
-  m_ItemPrefab: {fileID: 1431220876}
+  m_IsActive: 1
 --- !u!114 &552333598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3935,14 +3950,36 @@ RectTransform:
   m_Children:
   - {fileID: 559784327}
   - {fileID: 1964504125}
-  m_Father: {fileID: 1354141930}
-  m_RootOrder: 2
+  m_Father: {fileID: 639618737}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &552333602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552333596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c543aeab4e6f34c86aea1eb4a67f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addComment: {fileID: 0}
+  write_a_comment: {fileID: 1431220876}
+  inputField: {fileID: 1431220878}
+  textArea: {fileID: 29809592}
+  topLikeButton: {fileID: 267530560}
+  likeButton: {fileID: 692318568}
+  numberofTopLikes: {fileID: 859430171}
+  numberofLikes: {fileID: 1457490357}
+  m_ContentContainer: {fileID: 68531551}
+  m_ItemPrefab: {fileID: 1431220876}
 --- !u!1 &554419282
 GameObject:
   m_ObjectHideFlags: 0
@@ -4001,7 +4038,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Grimt Maleri >:(\u200B"
+  m_text: "Overraskende Maleri :O\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4236,6 +4273,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611457503}
   m_CullTransparentMesh: 1
+--- !u!1 &639618736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639618737}
+  m_Layer: 5
+  m_Name: SadForum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &639618737
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639618736}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 552333601}
+  m_Father: {fileID: 1354141930}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 118.5, y: 211}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &643869192
 GameObject:
   m_ObjectHideFlags: 0
@@ -4431,6 +4505,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &665235311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 665235312}
+  m_Layer: 5
+  m_Name: AngryForum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &665235312
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665235311}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 247881149}
+  m_Father: {fileID: 1354141930}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 118.5, y: 211}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &667856899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5105,7 +5216,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 532909562}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Writecomment, Assembly-CSharp
         m_MethodName: OnAddButtonClick
         m_Mode: 1
@@ -6037,6 +6148,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883282320}
   m_CullTransparentMesh: 1
+--- !u!1 &886096075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 886096076}
+  m_Layer: 5
+  m_Name: LovingForum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &886096076
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886096075}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 932134179}
+  m_Father: {fileID: 1354141930}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &905414538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6125,36 +6273,14 @@ GameObject:
   - component: {fileID: 932134178}
   - component: {fileID: 932134177}
   - component: {fileID: 932134176}
-  - component: {fileID: 932134175}
+  - component: {fileID: 932134180}
   m_Layer: 5
-  m_Name: LovingForum
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &932134175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932134174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e887cfa0a895d614785b6a165380d29f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  addComment: {fileID: 1596423746}
-  write_a_comment: {fileID: 936285076}
-  inputField: {fileID: 936285078}
-  textArea: {fileID: 1286373584}
-  topLikeButton: {fileID: 1806790927}
-  likeButton: {fileID: 853691967}
-  numberofTopLikes: {fileID: 1743709588}
-  numberofLikes: {fileID: 2085354340}
-  m_ContentContainer: {fileID: 1332522588}
-  m_ItemPrefab: {fileID: 936285076}
+  m_IsActive: 1
 --- !u!114 &932134176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6230,14 +6356,36 @@ RectTransform:
   m_Children:
   - {fileID: 1707191484}
   - {fileID: 334094192}
-  m_Father: {fileID: 1354141930}
-  m_RootOrder: 4
+  m_Father: {fileID: 886096076}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &932134180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932134174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1347d7c9ee841664c9743f4194c21868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addComment: {fileID: 1596423746}
+  write_a_comment: {fileID: 936285076}
+  inputField: {fileID: 936285078}
+  textArea: {fileID: 1286373584}
+  topLikeButton: {fileID: 1806790927}
+  likeButton: {fileID: 853691967}
+  numberofTopLikes: {fileID: 1743709588}
+  numberofLikes: {fileID: 2085354340}
+  m_ContentContainer: {fileID: 1332522588}
+  m_ItemPrefab: {fileID: 936285076}
 --- !u!1 &936285076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6680020806825863180, guid: d7b01d9fa3dc2a140a175568d54b2a74,
@@ -6384,7 +6532,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 380388855}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Writecomment, Assembly-CSharp
         m_MethodName: OnAddButtonClick
         m_Mode: 1
@@ -6736,7 +6884,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 380388855}
+      objectReference: {fileID: 0}
     - target: {fileID: 7128943404334565914, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -6954,7 +7102,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 46.944, y: -373.7415}
+  m_AnchoredPosition: {x: 46.944, y: -373.7422}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &982619964
@@ -7183,7 +7331,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 552333597}
+      objectReference: {fileID: 0}
     - target: {fileID: 7128943404334565914, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -7363,10 +7511,10 @@ RectTransform:
   m_Father: {fileID: 1058055326}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 540, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087163379
 MonoBehaviour:
@@ -7538,6 +7686,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133926073}
   m_CullTransparentMesh: 1
+--- !u!1 &1141974437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141974438}
+  m_Layer: 5
+  m_Name: SurprisedForum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1141974438
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141974437}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 380388859}
+  m_Father: {fileID: 1354141930}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1146689207
 GameObject:
   m_ObjectHideFlags: 0
@@ -7968,10 +8153,10 @@ RectTransform:
   m_Father: {fileID: 1058055326}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 757, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1245601986
 MonoBehaviour:
@@ -8125,7 +8310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Grimt Maleri >:(\u200B"
+  m_text: "Smukt Maleri! <3\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9576,11 +9761,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 532909566}
-  - {fileID: 380388859}
-  - {fileID: 552333601}
-  - {fileID: 247881149}
-  - {fileID: 932134179}
+  - {fileID: 886096076}
+  - {fileID: 639618737}
+  - {fileID: 113050758}
+  - {fileID: 1141974438}
+  - {fileID: 665235312}
   - {fileID: 39724743}
   - {fileID: 190544198}
   - {fileID: 1739438765}
@@ -9710,7 +9895,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 532909562}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Writecomment, Assembly-CSharp
         m_MethodName: OnTopLikeButtonClick
         m_Mode: 1
@@ -10187,7 +10372,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 932134175}
+      objectReference: {fileID: 0}
     - target: {fileID: 7128943404334565914, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -10654,7 +10839,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 532909562}
+      objectReference: {fileID: 0}
     - target: {fileID: 7128943404334565914, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -10980,7 +11165,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 380388855}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Writecomment, Assembly-CSharp
         m_MethodName: OnTopLikeButtonClick
         m_Mode: 1
@@ -11296,7 +11481,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 932134175}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Writecomment, Assembly-CSharp
         m_MethodName: OnAddButtonClick
         m_Mode: 1
@@ -12325,7 +12510,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 932134175}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Writecomment, Assembly-CSharp
         m_MethodName: OnTopLikeButtonClick
         m_Mode: 1
@@ -13505,10 +13690,10 @@ RectTransform:
   m_Father: {fileID: 1058055326}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 323, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963623559
 MonoBehaviour:
@@ -13924,7 +14109,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 552333597}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Writecomment, Assembly-CSharp
         m_MethodName: OnAddButtonClick
         m_Mode: 1
@@ -14297,7 +14482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 46.944, y: -373.7415}
+  m_AnchoredPosition: {x: 46.944, y: -373.7422}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2072655961
@@ -14410,7 +14595,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Grimt Maleri >:(\u200B"
+  m_text: "Trist Maleri :,/\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
