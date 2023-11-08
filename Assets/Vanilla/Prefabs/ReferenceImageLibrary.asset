@@ -27,3 +27,43 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: kvium_twins
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4693973268589115214
+      m_GuidHigh: 15345890851180275340
+    m_SerializedTextureGuid:
+      m_GuidLow: 8367280858062461112
+      m_GuidHigh: 7746003428494550617
+    m_Size: {x: 0.1, y: 0.10022805}
+    m_SpecifySize: 1
+    m_Name: BallarinaShit
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4875149836264297841
+      m_GuidHigh: 13906784222774555822
+    m_SerializedTextureGuid:
+      m_GuidLow: 9539514618913950145
+      m_GuidHigh: 7991295308105287691
+    m_Size: {x: 0.1, y: 0.14773777}
+    m_SpecifySize: 1
+    m_Name: HangTheBaby
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4634051445548402811
+      m_GuidHigh: 16389786543255872167
+    m_SerializedTextureGuid:
+      m_GuidLow: 7232029922013650867
+      m_GuidHigh: 16499005141625384138
+    m_Size: {x: 0.1, y: 0.124446906}
+    m_SpecifySize: 1
+    m_Name: PaleMale
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5547231924113688158
+      m_GuidHigh: 6968087271144778665
+    m_SerializedTextureGuid:
+      m_GuidLow: 7257543864540510933
+      m_GuidHigh: 2317240561389287640
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: RunningNaked
+    m_Texture: {fileID: 0}
