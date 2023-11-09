@@ -7,7 +7,7 @@ using TMPro;
 public class SurprisedForum : MonoBehaviour
 {
     //public GameObject commentCanvas;
-    
+
     public Button addComment;
     public GameObject write_a_comment;
     public TMP_InputField inputField;
@@ -15,31 +15,30 @@ public class SurprisedForum : MonoBehaviour
     public Button topLikeButton;
     public Button likeButton;
 
-    private int toplikeAmount = 8;
+    private int toplikeAmount = 12;
     public TMP_Text numberofTopLikes;
-    private int likeAmount = 0;
-    public TMP_Text numberofLikes;
+    //private int likeAmount = 0;
+    //public TMP_Text numberofLikes;
 
 
     [SerializeField] private ScrollRect scrollRect;
     [SerializeField] private Transform m_ContentContainer;
     [SerializeField] private GameObject m_ItemPrefab;
-    
+
 
     void Start()
     {
         //commentCanvas.SetActive(false);
-        
         Text numberofTopLikes = topLikeButton.GetComponentInChildren<Text>();
         Text numberofLikes = likeButton.GetComponentInChildren<Text>();
 
         if (numberofTopLikes != null)
         {
             numberofTopLikes.text = toplikeAmount.ToString(); // Initialize the text to the initial value
-            numberofLikes.text = likeAmount.ToString(); // Initialize the text to the initial value
+            //numberofLikes.text = likeAmount.ToString(); // Initialize the text to the initial value
         }
     }
-    
+
 
     // Update is called once per frame
     void Update()
@@ -49,7 +48,6 @@ public class SurprisedForum : MonoBehaviour
             // The Enter key was pressed, so add a new comment
             AddComment();
             OnAddButtonClick();
-
 
             // Clear the text in the TMP_InputField
             inputField.text = string.Empty;
@@ -65,6 +63,7 @@ public class SurprisedForum : MonoBehaviour
 
             Canvas.ForceUpdateCanvases(); // Ensure layout calculations are up to date
             scrollRect.normalizedPosition = new Vector2(0, 1);
+
         }
     }
 
@@ -74,75 +73,33 @@ public class SurprisedForum : MonoBehaviour
         {
             var item_go = Instantiate(m_ItemPrefab, m_ContentContainer.transform);
 
-            // Access the TMP_InputField in the instantiated object
-            TMP_InputField inputFieldInstance = item_go.GetComponentInChildren<TMP_InputField>();
+            LikeSystem likeSystem = item_go.GetComponent<LikeSystem>();
 
-            if (inputFieldInstance != null)
+            if (likeSystem != null)
             {
-                // Set the TMP_InputField in the instantiated object to non-interactable
-                inputFieldInstance.readOnly = true;
-                
-
-
+                likeSystem.InitializeLikeCount(0);
             }
-
-            item_go.transform.localScale = Vector2.one;
         }
     }
+
 
     public void OnTopLikeButtonClick()
     {
-
-        
-
         if (numberofTopLikes != null)
         {
-            
-                if (toplikeAmount == 8)
+            if (toplikeAmount == 12)
             {
                 toplikeAmount += 1;
             }
-                else
+            else
             {
                 toplikeAmount -= 1;
             }
-
-
-            
             // Now you can access and modify the text of the Button
             numberofTopLikes.text = toplikeAmount.ToString();
         }
-
-        
-
     }
 
-    public void OnLikeButtonClick()
-    {
-
-
-
-        if (numberofLikes != null)
-        {
-
-            if (likeAmount == 0)
-            {
-                likeAmount += 1;
-            }
-            else
-            {
-                likeAmount -= 1;
-            }
-
-
-
-            // Now you can access and modify the text of the Button
-            numberofLikes.text = likeAmount.ToString();
-        }
-
-
-
-    }
 
 }
 
