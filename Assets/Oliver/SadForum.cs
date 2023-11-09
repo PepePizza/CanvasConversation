@@ -15,14 +15,13 @@ public class SadForum : MonoBehaviour
     public Button topLikeButton;
     public Button likeButton;
 
-    private int toplikeAmount = 8;
+    private int toplikeAmount = 12;
     public TMP_Text numberofTopLikes;
     private int likeAmount = 0;
     public TMP_Text numberofLikes;
-    
 
 
-
+    [SerializeField] private ScrollRect scrollRect;
     [SerializeField] private Transform m_ContentContainer;
     [SerializeField] private GameObject m_ItemPrefab;
     
@@ -63,7 +62,10 @@ public class SadForum : MonoBehaviour
         {
             bool isActive = write_a_comment.activeSelf;
             write_a_comment.SetActive(!isActive);
-            
+
+            Canvas.ForceUpdateCanvases(); // Ensure layout calculations are up to date
+            scrollRect.normalizedPosition = new Vector2(0, 1);
+
         }
     }
 
@@ -71,6 +73,7 @@ public class SadForum : MonoBehaviour
     {
         if (m_ContentContainer != null && m_ItemPrefab != null)
         {
+            
             var item_go = Instantiate(m_ItemPrefab, m_ContentContainer.transform);
 
             // Access the TMP_InputField in the instantiated object
@@ -85,7 +88,8 @@ public class SadForum : MonoBehaviour
 
             }
 
-            item_go.transform.localScale = Vector2.one;
+            
+
         }
     }
 
@@ -97,7 +101,7 @@ public class SadForum : MonoBehaviour
         if (numberofTopLikes != null)
         {
             
-                if (toplikeAmount == 8)
+                if (toplikeAmount == 12)
             {
                 toplikeAmount += 1;
             }
@@ -142,6 +146,7 @@ public class SadForum : MonoBehaviour
 
 
     }
+    
 
 }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Emojis : MonoBehaviour
 {
@@ -17,7 +18,10 @@ public class Emojis : MonoBehaviour
     //public GameObject surprisedForum;
     //public GameObject sadnessForum;
     //public GameObject angerForum;
+
     
+    public Button BackButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +29,23 @@ public class Emojis : MonoBehaviour
     }
     
     
-    private void OnMouseUpAsButton()
+    public void OnMouseUpAsButton()
     {
         forum.SetActive(true);
     
         emojisCanvas.SetActive(false);
     }
-    
+
+    public void OnBackButtonClick()
+    {
+        if (BackButton != null)
+        {
+            //bool isActive = forum.activeSelf;
+            //forum.SetActive(!isActive);
+            forum.SetActive(false);
+
+            emojisCanvas.SetActive(true);
+
+        }
+    }
 }

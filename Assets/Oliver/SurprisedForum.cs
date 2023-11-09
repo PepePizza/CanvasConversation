@@ -19,10 +19,9 @@ public class SurprisedForum : MonoBehaviour
     public TMP_Text numberofTopLikes;
     private int likeAmount = 0;
     public TMP_Text numberofLikes;
-    
 
 
-
+    [SerializeField] private ScrollRect scrollRect;
     [SerializeField] private Transform m_ContentContainer;
     [SerializeField] private GameObject m_ItemPrefab;
     
@@ -63,7 +62,9 @@ public class SurprisedForum : MonoBehaviour
         {
             bool isActive = write_a_comment.activeSelf;
             write_a_comment.SetActive(!isActive);
-            
+
+            Canvas.ForceUpdateCanvases(); // Ensure layout calculations are up to date
+            scrollRect.normalizedPosition = new Vector2(0, 1);
         }
     }
 
