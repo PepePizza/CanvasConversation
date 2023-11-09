@@ -21,49 +21,49 @@ MonoBehaviour:
       m_GuidLow: 5036505595284413489
       m_GuidHigh: 8528485233008681646
     m_SerializedTextureGuid:
-      m_GuidLow: 7211058841179142448
-      m_GuidHigh: 6178336015407381499
-    m_Size: {x: 0.1, y: 0.1}
+      m_GuidLow: 14172949640239128969
+      m_GuidHigh: 17225233643913415496
+    m_Size: {x: 0.3, y: 0.3}
     m_SpecifySize: 1
     m_Name: kvium_twins
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
-      m_GuidLow: 4693973268589115214
-      m_GuidHigh: 15345890851180275340
+      m_GuidLow: 5358170086203912568
+      m_GuidHigh: 7947656257801121678
     m_SerializedTextureGuid:
-      m_GuidLow: 8367280858062461112
-      m_GuidHigh: 7746003428494550617
-    m_Size: {x: 0.1, y: 0.10022805}
+      m_GuidLow: 17587990037616326817
+      m_GuidHigh: 2573771472526330377
+    m_Size: {x: 0.3, y: 0.3010651}
     m_SpecifySize: 1
-    m_Name: BallarinaShit
+    m_Name: RunningNaked
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
-      m_GuidLow: 4875149836264297841
-      m_GuidHigh: 13906784222774555822
+      m_GuidLow: 5030600511118764301
+      m_GuidHigh: 5327290925156093326
     m_SerializedTextureGuid:
-      m_GuidLow: 9539514618913950145
-      m_GuidHigh: 7991295308105287691
-    m_Size: {x: 0.1, y: 0.14773777}
-    m_SpecifySize: 1
-    m_Name: HangTheBaby
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 4634051445548402811
-      m_GuidHigh: 16389786543255872167
-    m_SerializedTextureGuid:
-      m_GuidLow: 7232029922013650867
-      m_GuidHigh: 16499005141625384138
-    m_Size: {x: 0.1, y: 0.124446906}
+      m_GuidLow: 2650091372029955243
+      m_GuidHigh: 16448664865352912953
+    m_Size: {x: 0.3, y: 0.37335286}
     m_SpecifySize: 1
     m_Name: PaleMale
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
-      m_GuidLow: 5547231924113688158
-      m_GuidHigh: 6968087271144778665
+      m_GuidLow: 5621498022293846061
+      m_GuidHigh: 7265498422141907107
     m_SerializedTextureGuid:
-      m_GuidLow: 7257543864540510933
-      m_GuidHigh: 2317240561389287640
-    m_Size: {x: 0.1, y: 0.1}
+      m_GuidLow: 302455270381642581
+      m_GuidHigh: 15483712736475092890
+    m_Size: {x: 0.3, y: 0.44605955}
     m_SpecifySize: 1
-    m_Name: RunningNaked
+    m_Name: HangTheBaby
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5174183016531625357
+      m_GuidHigh: 14753690269928308628
+    m_SerializedTextureGuid:
+      m_GuidLow: 9514416142540210947
+      m_GuidHigh: 13337330833264881865
+    m_Size: {x: 0.3, y: 0.30035546}
+    m_SpecifySize: 1
+    m_Name: BallarinaShit
     m_Texture: {fileID: 0}

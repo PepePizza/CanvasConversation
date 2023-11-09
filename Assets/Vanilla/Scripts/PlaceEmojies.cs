@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
-public class ImageTrackingController : MonoBehaviour
+public class PlaceEmojies : MonoBehaviour
 {
     public ARTrackedImageManager trackedImageManager;
     public GameObject objectPrefab; // The prefab you want to place around the image.
