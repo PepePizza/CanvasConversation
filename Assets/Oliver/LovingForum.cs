@@ -20,9 +20,6 @@ public class LovingForum : MonoBehaviour
     private int likeAmount = 0;
     public TMP_Text numberofLikes;
     
-
-
-
     [SerializeField] private Transform m_ContentContainer;
     [SerializeField] private GameObject m_ItemPrefab;
     
@@ -50,8 +47,7 @@ public class LovingForum : MonoBehaviour
             // The Enter key was pressed, so add a new comment
             AddComment();
             OnAddButtonClick();
-
-
+            
             // Clear the text in the TMP_InputField
             inputField.text = string.Empty;
         }
@@ -63,7 +59,6 @@ public class LovingForum : MonoBehaviour
         {
             bool isActive = write_a_comment.activeSelf;
             write_a_comment.SetActive(!isActive);
-            
         }
     }
 
@@ -80,50 +75,32 @@ public class LovingForum : MonoBehaviour
             {
                 // Set the TMP_InputField in the instantiated object to non-interactable
                 inputFieldInstance.readOnly = true;
-                
-
-
             }
-
             item_go.transform.localScale = Vector2.one;
         }
     }
 
     public void OnTopLikeButtonClick()
     {
-
-        
-
         if (numberofTopLikes != null)
         {
-            
-                if (toplikeAmount == 8)
+            if (toplikeAmount == 8)
             {
                 toplikeAmount += 1;
             }
-                else
+            else
             {
                 toplikeAmount -= 1;
             }
-
-
-            
             // Now you can access and modify the text of the Button
             numberofTopLikes.text = toplikeAmount.ToString();
         }
-
-        
-
     }
 
     public void OnLikeButtonClick()
     {
-
-
-
         if (numberofLikes != null)
         {
-
             if (likeAmount == 0)
             {
                 likeAmount += 1;
@@ -132,15 +109,9 @@ public class LovingForum : MonoBehaviour
             {
                 likeAmount -= 1;
             }
-
-
-
             // Now you can access and modify the text of the Button
             numberofLikes.text = likeAmount.ToString();
         }
-
-
-
     }
 
 }
