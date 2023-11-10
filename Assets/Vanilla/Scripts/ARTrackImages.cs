@@ -30,6 +30,7 @@ public class ARTrackImages : MonoBehaviour
     
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
+        
         foreach (ARTrackedImage trackedImage in eventArgs.added) 
         { 
             foreach (ARObjectPrefab obj in objectPrefabs) 

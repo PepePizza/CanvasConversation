@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: 670fe345521954e4b8b186b2872ca9df,
     type: 2}
-  m_MaxNumberOfMovingImages: 1
+  m_MaxNumberOfMovingImages: 2
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &354650381
 MonoBehaviour:
@@ -190,6 +190,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+
 --- !u!114 &354650383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedImageManager: {fileID: 354650380}
-  objectPrefab: {fileID: 4286799585853679814, guid: 1e43685e24ae242409ff4e9ceac0c460,
+  objectPrefab: {fileID: 97422044082695514, guid: cb584d2bb6056447bba8683737142c89,
     type: 3}
 --- !u!1 &1204586108
 GameObject:
