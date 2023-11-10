@@ -9,7 +9,9 @@ public class LovingForum : MonoBehaviour
     //public GameObject commentCanvas;
 
     public Button addComment;
+    public Button commentOnAComment;
     public GameObject write_a_comment;
+    public GameObject comment_on_a_comment;
     public TMP_InputField inputField;
     public TextMeshProUGUI textArea;
     public Button topLikeButton;
@@ -25,7 +27,10 @@ public class LovingForum : MonoBehaviour
     [SerializeField] private Transform m_ContentContainer;
     [SerializeField] private GameObject m_ItemPrefab;
 
-
+    [SerializeField] private ScrollRect scrollRect2;
+    [SerializeField] private Transform m_ContentContainer2;
+    [SerializeField] private GameObject m_ItemPrefab2;
+    
     void Start()
     {
         //commentCanvas.SetActive(false);
@@ -66,6 +71,20 @@ public class LovingForum : MonoBehaviour
 
         }
     }
+    
+    public void OnAddButtonClick2()
+    {
+        Debug.Log("Button clicked - comment_on_a_comment");
+        if (comment_on_a_comment != null)
+        {
+            bool isActive = comment_on_a_comment.activeSelf;
+            comment_on_a_comment.SetActive(!isActive);
+
+            //Canvas.ForceUpdateCanvases(); // Ensure layout calculations are up to date
+            scrollRect2.normalizedPosition = new Vector2(0, 1);
+        }
+    }
+
 
     void AddComment()
     {
