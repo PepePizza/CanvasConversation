@@ -134,10 +134,6 @@ GameObject:
   - component: {fileID: 354650382}
   - component: {fileID: 354650381}
   - component: {fileID: 354650380}
-  - component: {fileID: 354650383}
-  - component: {fileID: 354650385}
-  - component: {fileID: 354650384}
-  - component: {fileID: 354650386}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -190,62 +186,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &354650383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354650379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 0}
-  m_DetectionMode: -1
---- !u!114 &354650384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354650379}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607c30ea6a52be346b9e9bb97ccd6e83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlaceablePrefeb: {fileID: 0}
---- !u!114 &354650385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354650379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RaycastPrefab: {fileID: 5664647760707749861, guid: 77b9081dd24164e62be3af9aac4ead1e,
-    type: 3}
---- !u!114 &354650386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354650379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3fcdc00cf02d4002addf2dbebc0b9ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackedImageManager: {fileID: 354650380}
-  objectPrefab: {fileID: 4286799585853679814, guid: 1e43685e24ae242409ff4e9ceac0c460,
-    type: 3}
 --- !u!1 &1204586108
 GameObject:
   m_ObjectHideFlags: 0
