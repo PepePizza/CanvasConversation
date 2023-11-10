@@ -4,7 +4,9 @@ using UnityEngine.XR.ARFoundation;
 public class PlaceEmojies : MonoBehaviour
 {
     public ARTrackedImageManager trackedImageManager;
-    public GameObject objectPrefab; // The prefab you want to place around the image.
+    
+    [SerializeField]
+    private GameObject objectPrefab; // The prefab you want to place around the image.
 
     private Transform imageTransform;
 
