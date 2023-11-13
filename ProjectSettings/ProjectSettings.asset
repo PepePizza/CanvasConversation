@@ -721,11 +721,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
-  cloudProjectId: 
+  cloudProjectId: 4e91c896-cc37-4c2c-8dfe-d28ac0655f2a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: CanvasConversation
+  organizationId: saysike
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
