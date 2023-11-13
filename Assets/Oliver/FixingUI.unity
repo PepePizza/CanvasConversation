@@ -5663,7 +5663,7 @@ GameObject:
   - component: {fileID: 689368056}
   m_Layer: 5
   m_Name: Avatar
-  m_TagString: Untagged
+  m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6163,7 +6163,7 @@ GameObject:
   - component: {fileID: 759637137}
   m_Layer: 5
   m_Name: Avatar
-  m_TagString: Untagged
+  m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6239,7 +6239,7 @@ GameObject:
   - component: {fileID: 787299705}
   m_Layer: 5
   m_Name: Avatar
-  m_TagString: Untagged
+  m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7407,7 +7407,7 @@ GameObject:
   - component: {fileID: 905414540}
   m_Layer: 5
   m_Name: Avatar
-  m_TagString: Untagged
+  m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7938,6 +7938,11 @@ PrefabInstance:
       propertyPath: likeText
       value: 
       objectReference: {fileID: 171795637}
+    - target: {fileID: 1040736420897485676, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Avatar
+      objectReference: {fileID: 0}
     - target: {fileID: 1040736420897485679, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10515,7 +10520,7 @@ GameObject:
   - component: {fileID: 1330881123}
   m_Layer: 5
   m_Name: Avatar
-  m_TagString: Untagged
+  m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10722,6 +10727,11 @@ PrefabInstance:
       propertyPath: likeText
       value: 
       objectReference: {fileID: 1187561898}
+    - target: {fileID: 1040736420897485676, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Avatar
+      objectReference: {fileID: 0}
     - target: {fileID: 1040736420897485679, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -11727,6 +11737,11 @@ PrefabInstance:
       propertyPath: likeText
       value: 
       objectReference: {fileID: 2085354340}
+    - target: {fileID: 1040736420897485676, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Avatar
+      objectReference: {fileID: 0}
     - target: {fileID: 1040736420897485679, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -12244,6 +12259,11 @@ PrefabInstance:
       propertyPath: likeText
       value: 
       objectReference: {fileID: 51592649}
+    - target: {fileID: 1040736420897485676, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Avatar
+      objectReference: {fileID: 0}
     - target: {fileID: 1040736420897485679, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -15107,6 +15127,11 @@ PrefabInstance:
       propertyPath: likeText
       value: 
       objectReference: {fileID: 1912208024}
+    - target: {fileID: 1040736420897485676, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Avatar
+      objectReference: {fileID: 0}
     - target: {fileID: 1040736420897485679, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -17499,6 +17524,66 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2147129190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2147129192}
+  - component: {fileID: 2147129191}
+  m_Layer: 0
+  m_Name: AvatarManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2147129191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147129190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83bfdf3a013e4993a91ff0df8668d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatarImages:
+  - {fileID: 21300000, guid: eb151879b907044cab464437024fc062, type: 3}
+  - {fileID: 21300000, guid: cd7ed72e0904b4b3599327dfabe25569, type: 3}
+  - {fileID: 21300000, guid: 71ba8faedee2a4d26b1a0b36a62bed09, type: 3}
+  - {fileID: 21300000, guid: aaa4833ebc2234d83b638ada249f6ed9, type: 3}
+  - {fileID: 21300000, guid: ee0c8b0dceffa4ac2949d08fa8881654, type: 3}
+  - {fileID: 21300000, guid: 32be9dc6466d34d009891f2fb02b4656, type: 3}
+  - {fileID: 21300000, guid: 36342d30666e7404090119c31866069a, type: 3}
+  - {fileID: 21300000, guid: 9a7604b8294cd40fda93eb19032636a7, type: 3}
+  - {fileID: 21300000, guid: afa521ba7d0ec417d9c4fe82bc645f26, type: 3}
+  - {fileID: 21300000, guid: b1534e875e1f84cce9d0042be235b6c3, type: 3}
+  - {fileID: 21300000, guid: 449c9f225363146f18cbaec47c39e816, type: 3}
+  - {fileID: 21300000, guid: 6048d66c4c5a54d6fa2decb346dead49, type: 3}
+  - {fileID: 21300000, guid: a789896ffce964753ba9eefbb03c8a8a, type: 3}
+  - {fileID: 21300000, guid: 0e7a304777485439cadd42f695b65226, type: 3}
+  - {fileID: 21300000, guid: 4080a9815f4fa48069e293e7f2f14620, type: 3}
+--- !u!4 &2147129192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147129190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 485.01593, y: 1050.1353, z: 116.81116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &189170225628670668 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7822537525208241630, guid: a29e11e02933d4b459835f804dd064da,
