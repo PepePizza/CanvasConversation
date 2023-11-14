@@ -542,7 +542,7 @@ RectTransform:
   m_GameObject: {fileID: 77905674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.81125003, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1506551051}
@@ -1379,9 +1379,13 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 'Anonymous Bear:
+  m_Text: '<color=#6A6A6A><size=25>Anonymous Bear:</size> </color>
 
-    Smukt Maleri! <3 '
+    Smukt Maleri
+    <3
+
+
+'
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 1
@@ -4876,7 +4880,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Anonymous Penguin:\nOverraskende Maleri :O\u200B"
+  m_text: "<color=#6A6A6A><size=25> Anonymous Penguin:</size> </color>\nOverraskende
+    Maleri :O\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
   m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
@@ -4886,8 +4891,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4943,7 +4948,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &554419285
@@ -5495,7 +5500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &665235312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6517,7 +6522,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Anonymous Cow:\nSjovt Maleri :,)\u200B"
+  m_text: "<color=#6A6A6A><size=25> Anonymous Cow:</size> </color>\nSjovt Maleri
+    >:)\n\n\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
   m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
@@ -7409,7 +7415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &886096076
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9080,9 +9086,13 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 'Anonymous Cow:
+  m_Text: '<color=#6A6A6A><size=25>Anonymous Cow:</size> </color>
 
-    Sjovt Maleri :,)'
+    Sjovt Maleri
+    >:)
+
+
+'
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 1
@@ -9474,7 +9484,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Anonymous Bear:\nSmukt Maleri! <3 \u200B"
+  m_text: "<color=#6A6A6A><size=25>Anonymous Bear:</size> </color>\nSmukt Maleri
+    <3\n\n\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
   m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
@@ -9877,9 +9888,10 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 'Anonymous Penguin:
+  m_Text: '<color=#6A6A6A><size=25>Anonymous Penguin:</size> </color>
 
-    Overraskende Maleri :O'
+    Overraskende
+    Maleri :O'
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 1
@@ -14520,7 +14532,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0, g: 0, b: 0, a: 1}
-  m_Text: '<color=#6A6A6A><size=25> Anonymous turtle</size> </color>
+  m_Text: '<color=#6A6A6A><size=25>Anonymous turtle</size> </color>
 
     Grimt Maleri
     >:(
@@ -14704,9 +14716,13 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 'Anonymous Armadillo:
+  m_Text: '<color=#6A6A6A><size=25>Anonymous Armadillo</size> </color>
 
-    Trist Maleri :,/'
+    Trist
+    Maleri >:/
+
+
+'
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 1
@@ -17139,7 +17155,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Anonymous Armadillo:\nTrist Maleri :,/\u200B"
+  m_text: "<color=#6A6A6A><size=25> Anonymous Armadillo</size> </color>\nTrist Maleri
+    >:/\n\n\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
   m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
@@ -17149,8 +17166,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -17206,7 +17223,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2085400913
