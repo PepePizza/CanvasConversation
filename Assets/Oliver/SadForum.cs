@@ -53,6 +53,7 @@ public class SadForum : MonoBehaviour
             AddComment();
             write_a_comment.SetActive(false);
 
+
             // Clear the text in the TMP_InputField
             inputField.text = string.Empty;
         }
@@ -77,6 +78,12 @@ public class SadForum : MonoBehaviour
             var item_go = Instantiate(m_ItemPrefab, m_ContentContainer.transform);
 
             LikeSystem likeSystem = item_go.GetComponent<LikeSystem>();
+
+            TMP_InputField commentInputField = item_go.GetComponentInChildren<TMP_InputField>();
+            if (commentInputField != null)
+            {
+                commentInputField.readOnly = true;
+            }
 
             if (likeSystem != null)
             {
