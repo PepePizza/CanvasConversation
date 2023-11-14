@@ -49,10 +49,9 @@ public class SadForum : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             // The Enter key was pressed, so add a new comment
-            AddComment();
-            OnAddButtonClick();
-
             
+            AddComment();
+            write_a_comment.SetActive(false);
 
             // Clear the text in the TMP_InputField
             inputField.text = string.Empty;
