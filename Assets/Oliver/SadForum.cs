@@ -20,6 +20,9 @@ public class SadForum : MonoBehaviour
     //private int likeAmount = 0;
     //public TMP_Text numberofLikes;
 
+    
+    
+
 
     [SerializeField] private ScrollRect scrollRect;
     [SerializeField] private Transform m_ContentContainer;
@@ -48,7 +51,9 @@ public class SadForum : MonoBehaviour
             // The Enter key was pressed, so add a new comment
             AddComment();
             OnAddButtonClick();
+
             
+
             // Clear the text in the TMP_InputField
             inputField.text = string.Empty;
         }
@@ -63,7 +68,6 @@ public class SadForum : MonoBehaviour
 
             Canvas.ForceUpdateCanvases(); // Ensure layout calculations are up to date
             scrollRect.normalizedPosition = new Vector2(0, 1);
-
         }
     }
 
@@ -82,7 +86,6 @@ public class SadForum : MonoBehaviour
         }
     }
 
-
     public void OnTopLikeButtonClick()
     {
         if (numberofTopLikes != null)
@@ -98,9 +101,7 @@ public class SadForum : MonoBehaviour
             // Now you can access and modify the text of the Button
             numberofTopLikes.text = toplikeAmount.ToString();
         }
-    }
-
-    
+    }    
 }
 
 
