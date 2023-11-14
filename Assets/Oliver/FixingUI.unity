@@ -4017,7 +4017,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Anonymous Turtle:\nGrimt Maleri >:(\n\n\u200B"
+  m_text: "<color=#6A6A6A><size=25> Anonymous turtle</size> </color>\nGrimt Maleri
+    >:(\n\n\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
   m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
@@ -4027,8 +4028,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -14518,10 +14519,11 @@ MonoBehaviour:
       m_Calls: []
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 'Anonymous Turtle:
+  m_SelectionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_Text: '<color=#6A6A6A><size=25> Anonymous turtle</size> </color>
 
-    Grimt Maleri >:(
+    Grimt Maleri
+    >:(
 
 
 '
