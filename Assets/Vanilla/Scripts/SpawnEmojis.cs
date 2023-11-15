@@ -16,12 +16,14 @@ public class SpawnEmojis : MonoBehaviour
     //Dictionary array of created prefabs
     private readonly Dictionary<string, GameObject> instantiated_smileyPreafbs = new Dictionary<string, GameObject>();
 
-    
+    private Camera camera;
 
     private void Awake()
     {
         //reference to the tracked image manager component
         trackedImageManager = GetComponent<ARTrackedImageManager>();
+        
+        camera = FindObjectOfType<Camera>();
     }
 
     private void OnEnable()
@@ -35,11 +37,13 @@ public class SpawnEmojis : MonoBehaviour
         //remove event handler
         trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
+    
 
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
-        //loop through all new tracked images that has been detected 
-        /*foreach (var trackedImage in eventArgs.added)
+        
+        //loop through all new tracked images that has been detected
+        foreach (var trackedImage in eventArgs.added)
         {
             //get name of  reference image
             var imageName = trackedImage.referenceImage.name;
@@ -47,38 +51,18 @@ public class SpawnEmojis : MonoBehaviour
             //loop over the array of prefabs 
             foreach (var currentPrefab in smileyPrefabs)
             {
-                //check if prefab name matches tracked image name and prefab has not been instantiated 
+                //check if prefab name matches tracked image name and prefab has not been instantiated
                 if (string.Compare(currentPrefab.name, imageName, StringComparison.Ordinal) == 0 
                     && !instantiated_smileyPreafbs.ContainsKey(imageName))
                 {
                     //instantiat prefab and parent it to the ARTrackedImage
-                    var new_smileyPrefab = Instantiate(currentPrefab, new Vector3(), currentPrefab.transform.rotation);
-                    new_smileyPrefab.transform.parent = trackedImage.transform; // Set the tracked image as the parent
-                    
-                    // Set the local position of the child object to the center of the image
-                    new_smileyPrefab.transform.localPosition = trackedImage.transform.position;
-                    
-                    //ad the instantiated prefab to array with instantiated prefabs 
-                    instantiated_smileyPreafbs[imageName] = new_smileyPrefab;
-                }
-            }
-        }*/
-        
-        foreach (var trackedImage in eventArgs.added)
-        {
-            var imageName = trackedImage.referenceImage.name;
-
-            foreach (var currentPrefab in smileyPrefabs)
-            {
-                if (string.Compare(currentPrefab.name, imageName, StringComparison.Ordinal) == 0 
-                    && !instantiated_smileyPreafbs.ContainsKey(imageName))
-                {
                     var new_smileyPrefab = Instantiate(currentPrefab, trackedImage.transform.position, currentPrefab.transform.rotation);
                     new_smileyPrefab.transform.parent = trackedImage.transform;
 
                     // Set the local position of the child object to the center of the parent (ARTrackedImage)
                     new_smileyPrefab.transform.localPosition = Vector3.zero;
-
+                    
+                    //ad the instantiated prefab to array with instantiated prefabs
                     instantiated_smileyPreafbs[imageName] = new_smileyPrefab;
                 }
             }
