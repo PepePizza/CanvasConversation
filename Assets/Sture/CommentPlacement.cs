@@ -10,6 +10,7 @@ public class CommentPlacement : MonoBehaviour
     [SerializeField] private Sprite commentImage;
     [SerializeField] private TMP_Text commentText;
     [SerializeField] private GameObject avatarPicture;
+    [SerializeField] private TMP_InputField test123;
     private string imageName;
     
     [SerializeField] private Transform commentHolder; // Reference to the comment holder in the Inspector
@@ -32,9 +33,8 @@ public class CommentPlacement : MonoBehaviour
             avatarPicture.GetComponent<Image>().sprite = commentImage;
             
             commentText.text = "<color=#6A6A6A><size=25>Anonymous " + imageName + "</size></color>\n" + customText;
-            
+            test123.text = commentText.text;
         }
-        
     }
     
     

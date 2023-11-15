@@ -2995,9 +2995,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 12
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
-  m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4024,7 +4023,7 @@ MonoBehaviour:
   m_text: "<color=#6A6A6A><size=25> Anonymous turtle</size> </color>\nGrimt Maleri
     >:(\n\n\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662, type: 2}
   m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
     type: 2}
   m_fontSharedMaterials: []
@@ -4089,7 +4088,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &486435189
@@ -4620,9 +4619,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: +
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
-  m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4884,7 +4882,7 @@ MonoBehaviour:
   m_text: "<color=#6A6A6A><size=25> Anonymous Penguin:</size> </color>\nOverraskende
     Maleri :O\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662, type: 2}
   m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
     type: 2}
   m_fontSharedMaterials: []
@@ -4949,7 +4947,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &554419285
@@ -5178,9 +5176,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "'Name of picture' \nmade me feel"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
-  m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5259,7 +5256,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2086781638}
+    m_TransformParent: {fileID: 982619963}
     m_Modifications:
     - target: {fileID: -4920981878646150414, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5269,13 +5266,30 @@ PrefabInstance:
     - target: {fileID: 1040736420103010122, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040736420103010165, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -196.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040736420103010167, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_text
+      value: "En afbildning af hvordan for\xE6ldre tvinger deres b\xF8rn til diverse
+        fritidsaktiviteter i et desperat fors\xF8g p\xE5 at f\xE5 dem v\xE6k fra
+        sk\xE6rmen "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040736420103010167, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1040736420103010167, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
         type: 2}
     - target: {fileID: 1040736420103010167, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5301,8 +5315,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
-        type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 1040736420103010167, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_fontColor32.rgba
@@ -5316,19 +5329,25 @@ PrefabInstance:
     - target: {fileID: 1040736420327549940, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_text
+      value: "En afbildning af hvordan for\xE6ldre tvinger deres b\xF8rn til diverse
+        fritidsaktiviteter i et desperat fors\xF8g p\xE5 at f\xE5 \u200B"
       objectReference: {fileID: 0}
     - target: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662,
         type: 2}
     - target: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 8559048352965936195, guid: 19ded91755ae54f7da7d13153edc7662,
         type: 2}
     - target: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5377,6 +5396,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349780, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040736421898349780, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
       propertyPath: m_LineType
       value: 1
       objectReference: {fileID: 0}
@@ -5389,7 +5413,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_GlobalFontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 1dd6b6942d82e4613aacf4bc18b77e7b,
         type: 2}
     - target: {fileID: 1040736421898349780, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5444,7 +5468,7 @@ PrefabInstance:
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5454,7 +5478,7 @@ PrefabInstance:
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5464,7 +5488,7 @@ PrefabInstance:
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5479,17 +5503,17 @@ PrefabInstance:
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.35
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.35
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.35
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5504,7 +5528,7 @@ PrefabInstance:
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -116.811226
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5529,12 +5553,12 @@ PrefabInstance:
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 14.909851
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -91.10767
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5550,6 +5574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040736421898349781, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1040736421898349783, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5671,7 +5700,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
         type: 2}
     - target: {fileID: 7340261162056180689, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -5682,8 +5711,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
-        type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7340261162056180689, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
       propertyPath: m_characterSpacing
@@ -5755,12 +5783,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customText: "En afbildning af hvordan for\xE6ldre tvinger deres b\xF8rn til diverse
-    fritidsaktiviteter i et desperat fors\xF8g p\xE5 at f\xE5 dem v\xE6k fra sk\xE6rmen "
+    fritidsaktiviteter i et desperat fors\xF8g p\xE5 at f\xE5 dem v\xE6k fra sk\xE6rmen"
   commentImage: {fileID: 21300000, guid: 19b9b5a72f9814522bc42a7997537560, type: 3}
   commentText: {fileID: 1743605813}
   avatarPicture: {fileID: 759862899}
+  test123: {fileID: 619953183}
   commentHolder: {fileID: 982619963}
   scrollRect: {fileID: 99677893}
+--- !u!114 &619953183 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1040736421898349780, guid: d7b01d9fa3dc2a140a175568d54b2a74,
+    type: 3}
+  m_PrefabInstance: {fileID: 619953175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619953179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &619953186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7052,8 +7093,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<color=#6A6A6A><size=25>Anonymous Cow:</size> </color>\nSjovt Maleri >:)\n\n\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
-  m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
+  m_fontAsset: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662, type: 2}
+  m_sharedMaterial: {fileID: 8559048352965936195, guid: 19ded91755ae54f7da7d13153edc7662,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8158,9 +8199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addComment: {fileID: 1596423746}
-  commentOnAComment: {fileID: 718864554}
   write_a_comment: {fileID: 936285076}
-  comment_on_a_comment: {fileID: 189170225628670668}
   inputField: {fileID: 936285078}
   textArea: {fileID: 1286373584}
   topLikeButton: {fileID: 1806790927}
@@ -8169,9 +8208,6 @@ MonoBehaviour:
   scrollRect: {fileID: 334094196}
   m_ContentContainer: {fileID: 1332522588}
   m_ItemPrefab: {fileID: 936285076}
-  scrollRect2: {fileID: 504901447}
-  m_ContentContainer2: {fileID: 1329127685}
-  m_ItemPrefab2: {fileID: 189170225628670668}
 --- !u!1 &936285076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6680020806825863180, guid: d7b01d9fa3dc2a140a175568d54b2a74,
@@ -8512,7 +8548,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662,
         type: 2}
     - target: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -9013,6 +9049,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 142783068}
+  - {fileID: 619953176}
   m_Father: {fileID: 99677889}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10014,7 +10051,7 @@ MonoBehaviour:
   m_text: "<color=#6A6A6A><size=25>Anonymous Bear:</size> </color>\nSmukt Maleri
     <3\n\n\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662, type: 2}
   m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
     type: 2}
   m_fontSharedMaterials: []
@@ -10079,7 +10116,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1256153117
@@ -11345,7 +11382,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662,
         type: 2}
     - target: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -12389,7 +12426,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662,
         type: 2}
     - target: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -12950,7 +12987,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662,
         type: 2}
     - target: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -15872,7 +15909,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662,
         type: 2}
     - target: {fileID: 1040736420327549942, guid: d7b01d9fa3dc2a140a175568d54b2a74,
         type: 3}
@@ -17697,7 +17734,7 @@ MonoBehaviour:
   m_text: "<color=#6A6A6A><size=25> Anonymous Armadillo</size> </color>\nTrist Maleri
     >:/\n\n\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662, type: 2}
   m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
     type: 2}
   m_fontSharedMaterials: []
@@ -17762,7 +17799,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2085400913
@@ -17866,22 +17903,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2086781638
-Transform:
+--- !u!224 &2086781638
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2086781637}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.728943, y: 66.76686, z: 86.52679}
+  m_LocalPosition: {x: 0, y: 0, z: 86.52679}
   m_LocalScale: {x: 0.7407408, y: 0.7407408, z: 0.7407408}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 619953176}
+  m_Children: []
   m_Father: {fileID: 532909566}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -40.728943, y: 66.76686}
+  m_SizeDelta: {x: 100, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2094173779
 GameObject:
   m_ObjectHideFlags: 0
@@ -18400,12 +18441,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &189170225628670668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7822537525208241630, guid: a29e11e02933d4b459835f804dd064da,
-    type: 3}
-  m_PrefabInstance: {fileID: 7939614414076788498}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5793127323699015189 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4488540329287241991, guid: a29e11e02933d4b459835f804dd064da,
@@ -18433,7 +18468,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804,
+      objectReference: {fileID: 11400000, guid: 19ded91755ae54f7da7d13153edc7662,
         type: 2}
     - target: {fileID: 4488540327645206052, guid: a29e11e02933d4b459835f804dd064da,
         type: 3}
