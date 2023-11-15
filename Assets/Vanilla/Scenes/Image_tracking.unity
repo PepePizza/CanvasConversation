@@ -201,10 +201,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smileyPrefabs:
   - {fileID: 5044586734540727721, guid: 2f245c8486f6a4013bc59c3890d903cb, type: 3}
-  - {fileID: 5044586734540727721, guid: b3b9f498e271c46f5bffa5ee0974cd32, type: 3}
-  - {fileID: 5044586734540727721, guid: e266b9a654ccd488b965e257b5341487, type: 3}
-  - {fileID: 5044586734540727721, guid: 717c7ceb55abd45239ce9fa7d38508cb, type: 3}
-  - {fileID: 5044586734540727721, guid: 6f026773f2c9542658eee6d369605334, type: 3}
+  - {fileID: 5044586734540727721, guid: 57a124a81d7054178b2c54bf17019a83, type: 3}
+  - {fileID: 5044586734540727721, guid: 539bb1e536040454f9d88827be09b5f7, type: 3}
+  - {fileID: 5044586734540727721, guid: 272761431db4340148e8a2a2137af998, type: 3}
+  - {fileID: 5044586734540727721, guid: 7f37cd4db0598455abc23b9b2de6b6eb, type: 3}
 --- !u!1 &1204586108
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,14 +5,27 @@ using UnityEngine;
 public class PositionController : MonoBehaviour
 {
     //Reference to the camera's Transform component
-    public Transform cameraToFollow; 
-
+    //public Transform cameraToFollow; 
+    
+    private Camera arCamera; // Reference to the AR camera
+    private Vector3 cameraPosition;
+    
+    
+    void Start()
+    {
+        
+        arCamera = GameObject.FindGameObjectWithTag("MainCamera")?.GetComponent<Camera>();
+        
+    }
+    
     void Update()
     {
-            //lookDirection is a Vector3 variable that stores the direction from the camera's position to the object's position
+        cameraPosition = arCamera.transform.position;
+        
+        //lookDirection is a Vector3 variable that stores the direction from the camera's position to the object's position
             //cameraToFollow is a variable representing the position of a camera in the scene
             //transform.position is a reference to the position of the emojis
-            Vector3 lookDirection = cameraToFollow.position - transform.position;
+            Vector3 lookDirection = cameraPosition - transform.position;
 
             //Inverts the lookDirection vector. Multiplying a vector by -1 essentially flips its direction
             lookDirection *= -1;
