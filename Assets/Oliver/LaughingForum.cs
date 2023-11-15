@@ -25,7 +25,6 @@ public class LaughingForum : MonoBehaviour
     [SerializeField] private Transform m_ContentContainer;
     [SerializeField] private GameObject m_ItemPrefab;
 
-
     void Start()
     {
         //commentCanvas.SetActive(false);
@@ -46,8 +45,10 @@ public class LaughingForum : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             // The Enter key was pressed, so add a new comment
+
             AddComment();
-            OnAddButtonClick();
+            write_a_comment.SetActive(false);
+
 
             // Clear the text in the TMP_InputField
             inputField.text = string.Empty;
@@ -63,7 +64,6 @@ public class LaughingForum : MonoBehaviour
 
             Canvas.ForceUpdateCanvases(); // Ensure layout calculations are up to date
             scrollRect.normalizedPosition = new Vector2(0, 1);
-
         }
     }
 
@@ -75,13 +75,18 @@ public class LaughingForum : MonoBehaviour
 
             LikeSystem likeSystem = item_go.GetComponent<LikeSystem>();
 
+            TMP_InputField commentInputField = item_go.GetComponentInChildren<TMP_InputField>();
+            if (commentInputField != null)
+            {
+                commentInputField.readOnly = true;
+            }
+
             if (likeSystem != null)
             {
                 likeSystem.InitializeLikeCount(0);
             }
         }
     }
-
 
     public void OnTopLikeButtonClick()
     {
@@ -99,8 +104,6 @@ public class LaughingForum : MonoBehaviour
             numberofTopLikes.text = toplikeAmount.ToString();
         }
     }
-
-
 }
 
 

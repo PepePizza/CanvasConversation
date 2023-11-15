@@ -21,14 +21,10 @@ public class SadForum : MonoBehaviour
     //public TMP_Text numberofLikes;
 
     
-    
-
-
     [SerializeField] private ScrollRect scrollRect;
     [SerializeField] private Transform m_ContentContainer;
     [SerializeField] private GameObject m_ItemPrefab;
-    
-
+   
     void Start()
     {
         //commentCanvas.SetActive(false);
