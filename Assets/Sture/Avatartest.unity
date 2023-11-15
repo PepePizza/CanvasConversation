@@ -959,7 +959,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 46.944, y: -373.74155}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89941568
 MonoBehaviour:
@@ -1341,7 +1341,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0.000015258789, y: -150.00005}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 609.2474, y: 100.404755}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &151242183
 MonoBehaviour:
@@ -2776,7 +2776,7 @@ PrefabInstance:
     - target: {fileID: 4488540329287241991, guid: a29e11e02933d4b459835f804dd064da,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4488540329287241991, guid: a29e11e02933d4b459835f804dd064da,
         type: 3}
@@ -2786,7 +2786,7 @@ PrefabInstance:
     - target: {fileID: 4488540329287241991, guid: a29e11e02933d4b459835f804dd064da,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4488540329287241991, guid: a29e11e02933d4b459835f804dd064da,
         type: 3}
@@ -2846,12 +2846,12 @@ PrefabInstance:
     - target: {fileID: 4488540329287241991, guid: a29e11e02933d4b459835f804dd064da,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 354.6237
       objectReference: {fileID: 0}
     - target: {fileID: 4488540329287241991, guid: a29e11e02933d4b459835f804dd064da,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50.202374
       objectReference: {fileID: 0}
     - target: {fileID: 4488540329287241991, guid: a29e11e02933d4b459835f804dd064da,
         type: 3}
@@ -7289,7 +7289,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 860693250}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LaughingForum, Assembly-CSharp
         m_MethodName: OnAddButtonClick
         m_Mode: 1
@@ -8099,7 +8099,7 @@ GameObject:
   - component: {fileID: 860693253}
   - component: {fileID: 860693252}
   - component: {fileID: 860693251}
-  - component: {fileID: 860693250}
+  - component: {fileID: 860693254}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -8130,28 +8130,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &860693250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860693248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 589e1d19c31012745a1211eb9e865d4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  addComment: {fileID: 788923255}
-  write_a_comment: {fileID: 231909125}
-  inputField: {fileID: 231909126}
-  textArea: {fileID: 231909124}
-  topLikeButton: {fileID: 1392082593}
-  likeButton: {fileID: 231909122}
-  numberofTopLikes: {fileID: 1733894251}
-  scrollRect: {fileID: 461928501}
-  m_ContentContainer: {fileID: 647872847}
-  m_ItemPrefab: {fileID: 231909125}
 --- !u!114 &860693251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8213,6 +8191,28 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &860693254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860693248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb17e8a438354accb0b0711c896a5f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addComment: {fileID: 788923255}
+  write_a_comment: {fileID: 231909125}
+  inputField: {fileID: 231909126}
+  textArea: {fileID: 231909124}
+  topLikeButton: {fileID: 1392082593}
+  likeButton: {fileID: 231909122}
+  numberofTopLikes: {fileID: 1733894251}
+  scrollRect: {fileID: 461928501}
+  m_ContentContainer: {fileID: 647872847}
+  m_ItemPrefab: {fileID: 231909125}
 --- !u!1 &878074347
 GameObject:
   m_ObjectHideFlags: 0
@@ -11768,7 +11768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1329498231
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12531,7 +12531,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 860693250}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LaughingForum, Assembly-CSharp
         m_MethodName: OnTopLikeButtonClick
         m_Mode: 1
@@ -16894,7 +16894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2003371754
 RectTransform:
   m_ObjectHideFlags: 0
