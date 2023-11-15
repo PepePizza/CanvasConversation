@@ -34,6 +34,7 @@ public class CommentPlacement : MonoBehaviour
             
             commentText.text = "<color=#6A6A6A><size=25>Anonymous " + imageName + "</size></color>\n" + customText;
             test123.text = commentText.text;
+            test123.readOnly = true;
         }
     }
     
