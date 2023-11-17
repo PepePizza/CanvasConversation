@@ -17,6 +17,8 @@ public class Test_SpawnEmojis : MonoBehaviour
     private readonly Dictionary<string, GameObject> instantiated_smileyPreafbs = new Dictionary<string, GameObject>();
 
     private Camera camera;
+
+    public GameObject emojisSelectorCanvas;
     
     // Add a public property to get the currently tracked image
     public ARTrackedImage CurrentlyTrackedImage { get; private set; }
@@ -69,7 +71,10 @@ public class Test_SpawnEmojis : MonoBehaviour
                     instantiated_smileyPreafbs[imageName] = new_smileyPrefab;
                 }
             }
+            
+            emojisSelectorCanvas.SetActive(true);
         }
+        
 
         //set instatiated prefabs to active/ not active depending on if their image is currently being tracked 
         foreach (var trackedImage in eventArgs.updated)
@@ -88,6 +93,9 @@ public class Test_SpawnEmojis : MonoBehaviour
         {
             //set the prefab to not active
            instantiated_smileyPreafbs[trackedImage.referenceImage.name].SetActive(false);
+           
+           //set the emojiselector to not active 
+           emojisSelectorCanvas.SetActive(false);
         }
     }
 }
