@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BlankAR.unity
     guid: 6bdce89659816455b9f906fc62d19910
-  - enabled: 1
+  - enabled: 0
     path: Assets/Vanilla/Scenes/Image_tracking.unity
     guid: ad965bebc5c834d0fa62ead01be34d21
+  - enabled: 1
+    path: Assets/Vanilla/Scenes/Test_Image_tracking.unity
+    guid: 1ce0b3a4145404cf0bcc7bbc44445c89
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
