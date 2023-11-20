@@ -12,6 +12,9 @@ public class Comment : MonoBehaviour
     public TMP_InputField Inputfield;
     private string imageName;
     
+    //Personligt profilbillede
+    public Sprite pAvatar;
+    
     //Like System
     public TMP_Text likeText;
 
@@ -19,18 +22,53 @@ public class Comment : MonoBehaviour
     private DateTime lastLikeTime = DateTime.MinValue;
     
     //Reply
-    public GameObject ReplyPrefab;
+    public GameObject ReplyPrefab,ReplyBox;
+    public Transform contentPane;
+    public TMP_InputField ReplyField;
 
     void Start()
     {
+        if (gameObject.name == "Reply(Clone)")
+        {
+            Debug.Log("s R reply");
+            commentImage = pAvatar;
+            imageName = commentImage.name.Split('.')[0];
+            imageName = char.ToUpper(imageName[0]) + imageName.Substring(1);
+            Debug.Log(imageName);
+        }
+
         imageName = commentImage.name.Split('.')[0];
         imageName = char.ToUpper(imageName[0]) + imageName.Substring(1);
-
+        
         avatarPicture.GetComponent<Image>().sprite = commentImage;
             
         Inputfield.text = "<color=#6A6A6A><size=25>Anonymous " + imageName + "</size></color>\n" + customText + "\n";
         Inputfield.readOnly = true;
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            Debug.Log("test enter");
+            if (gameObject.name == "Reply(Clone)")
+            {
+                Debug.Log("test reply");
+                customText = ReplyField.text;
+                ReplyBox.SetActive(false);
+            
+                RectTransform uitransform = gameObject.GetComponent<RectTransform>();
+                uitransform.anchorMin = new Vector2(1, 1);
+                uitransform.anchorMax = new Vector2(1, 1);
+                uitransform.pivot = new Vector2(1, 1);
+            
+                Canvas.ForceUpdateCanvases();
+            }
+        }
+        Inputfield.text = "<color=#6A6A6A><size=25>Anonymous " + imageName + "</size></color>\n" + customText + "\n";
+        Inputfield.readOnly = true;
+    }
+
 
     public bool CanLike()
     {
@@ -59,19 +97,17 @@ public class Comment : MonoBehaviour
     public void CreateReply()
     {
         GameObject replyPrefab = Instantiate(ReplyPrefab);
-        replyPrefab.transform.SetParent(transform, false);
+        replyPrefab.transform.SetParent(contentPane, false);
 
-        // Force a layout update to ensure the ContentSizeFitter has calculated the size
         LayoutRebuilder.ForceRebuildLayoutImmediate(replyPrefab.GetComponent<RectTransform>());
-
-        // Capture the initial position
-        Vector3 initialPosition = replyPrefab.transform.position;
-
-        // Adjust the y position to be below the initial position
-        float yOffset = -180f; // Adjust this value based on your needs
-        replyPrefab.transform.position = new Vector3(initialPosition.x, initialPosition.y + yOffset, initialPosition.z);
+        
+        int indexnumber = transform.GetSiblingIndex();
+        print(indexnumber);
+        replyPrefab.transform.SetSiblingIndex(indexnumber + 1);
 
         replyPrefab.SetActive(true);
     }
+    
+    //Hvis gameobjectet hedder "reply" setactive inputfield, random billede.
 }
 
