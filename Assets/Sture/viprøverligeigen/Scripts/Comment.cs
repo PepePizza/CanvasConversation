@@ -17,6 +17,11 @@ public class Comment : MonoBehaviour
     
     //Like System
     public TMP_Text likeText;
+    
+    //Top comment like
+    public Button topLikeButton;
+    private int toplikeAmount = 12;
+    public TMP_Text numberofTopLikes;
 
     private int likeAmount = 0;
     private DateTime lastLikeTime = DateTime.MinValue;
@@ -30,11 +35,9 @@ public class Comment : MonoBehaviour
     {
         if (gameObject.name == "Reply(Clone)")
         {
-            Debug.Log("s R reply");
             commentImage = pAvatar;
             imageName = commentImage.name.Split('.')[0];
             imageName = char.ToUpper(imageName[0]) + imageName.Substring(1);
-            Debug.Log(imageName);
         }
 
         imageName = commentImage.name.Split('.')[0];
@@ -50,7 +53,6 @@ public class Comment : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            Debug.Log("test enter");
             if (gameObject.name == "Reply(Clone)")
             {
                 Debug.Log("test reply");
@@ -108,6 +110,21 @@ public class Comment : MonoBehaviour
         replyPrefab.SetActive(true);
     }
     
-    //Hvis gameobjectet hedder "reply" setactive inputfield, random billede.
+    public void OnTopLikeButtonClick()
+    {
+        if (numberofTopLikes != null)
+        {
+            if (toplikeAmount == 12)
+            {
+                toplikeAmount += 1;
+            }
+            else
+            {
+                toplikeAmount -= 1;
+            }
+            
+            numberofTopLikes.text = toplikeAmount.ToString();
+        }
+    }
 }
 
