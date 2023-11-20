@@ -32,7 +32,8 @@ public class CommentPlacement : MonoBehaviour
 
             avatarPicture.GetComponent<Image>().sprite = commentImage;
             
-            commentText.text = "<color=#6A6A6A><size=25>Anonymous " + imageName + "</size></color>\n" + customText;
+            commentText.text = "<color=#6A6A6A><size=25>Anonymous " + imageName + "</size></color>\n" + customText + "\n";
+
             test123.text = commentText.text;
             test123.readOnly = true;
         }
