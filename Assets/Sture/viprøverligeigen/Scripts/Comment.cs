@@ -20,7 +20,7 @@ public class Comment : MonoBehaviour
     
     //Top comment like
     public Button topLikeButton;
-    private int toplikeAmount = 12;
+    private int toplikeAmount = 21;
     public TMP_Text numberofTopLikes;
 
     private int likeAmount = 0;
@@ -114,7 +114,7 @@ public class Comment : MonoBehaviour
     {
         if (numberofTopLikes != null)
         {
-            if (toplikeAmount == 12)
+            if (toplikeAmount == 21)
             {
                 toplikeAmount += 1;
             }
