@@ -30,7 +30,6 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
         //reference to the tracked image manager component
         trackedImageManager = GetComponent<ARTrackedImageManager>();
         spawnEmojisScript = GetComponent<Test_SpawnEmojis>();
-
     }
 
     private void Update()
@@ -41,7 +40,7 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick (PointerEventData eventData)
     {
         // Get the tag of the clicked button's GameObject
-        string buttonTag = eventData.pointerPress.tag;
+        buttonTag = eventData.pointerPress.tag;
         OnClick_IncreaseSize();
         
     }
