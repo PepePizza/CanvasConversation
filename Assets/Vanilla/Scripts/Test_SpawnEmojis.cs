@@ -28,7 +28,7 @@ public class Test_SpawnEmojis : MonoBehaviour
         //reference to the tracked image manager component
         trackedImageManager = GetComponent<ARTrackedImageManager>();
         
-        camera = FindObjectOfType<Camera>();
+        camera = Camera.main;
     }
 
     private void OnEnable()
