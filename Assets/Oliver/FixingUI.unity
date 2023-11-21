@@ -39,10 +39,14 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 =======
   m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 >>>>>>> 8cdb616dc16c837186b30f37c541ab843b3a1068
+=======
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+>>>>>>> 5698dfcee74f69915cf4346393832d162bf36304
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8630,7 +8634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &886096076
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12363,9 +12367,8 @@ MonoBehaviour:
   m_text: "<color=#6A6A6A><size=25>Anonymous Bear:</size> </color>\nSmukt Maleri
     <3\n\n\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
-  m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18128,9 +18131,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 12
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
-  m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19303,9 +19305,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "'Name of picture' \nmade me feel"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
-  m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21145,9 +21146,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: +
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad352a6685d2049a59ba38b894aef804, type: 2}
-  m_sharedMaterial: {fileID: 5533806823464184925, guid: ad352a6685d2049a59ba38b894aef804,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

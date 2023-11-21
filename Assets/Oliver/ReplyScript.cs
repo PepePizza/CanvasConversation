@@ -1,26 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using System;
+
 
 public class ReplyScript : MonoBehaviour
 {
-    public TMP_InputField inputField;
     public GameObject Reply;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    public TMP_Text likeText;
 
-    // Update is called once per frame
+    private int likeAmount = 0;
+    private DateTime lastLikeTime = DateTime.MinValue;
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
-            // The Enter key was pressed, so add a new comment
-
             TMP_InputField commentInputField = Reply.GetComponentInChildren<TMP_InputField>();
             if (commentInputField != null)
             {
@@ -36,8 +31,36 @@ public class ReplyScript : MonoBehaviour
             bool isActive = Reply.activeSelf;
             Reply.SetActive(!isActive);
         }
+    }
+    
+    public void InitializeLikeCount(int initialLikes)
+    {
+        likeAmount = initialLikes;
+        UpdateLikeText();
+    }
 
-        
+    public bool CanLike()
+    {
+        TimeSpan timeSinceLastLike = DateTime.Now - lastLikeTime;
+        return timeSinceLastLike.TotalMinutes >= 2;
+    }
+
+    public void OnLikeButtonClick()
+    {
+        if (CanLike())
+        {
+            likeAmount += 1;
+            lastLikeTime = DateTime.Now;
+            UpdateLikeText();
+        }
+    }
+
+    private void UpdateLikeText()
+    {
+        if (likeText != null)
+        {
+            likeText.text = likeAmount.ToString();
+        }
     }
 
 }
