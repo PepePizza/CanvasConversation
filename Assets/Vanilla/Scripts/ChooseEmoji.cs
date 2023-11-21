@@ -8,7 +8,6 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
 {
-
     //reference to AR tracked image manager component 
     private ARTrackedImageManager trackedImageManager;
     
