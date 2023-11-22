@@ -14,7 +14,7 @@ public struct canvas_forum_Prefabs
     public GameObject forum_prefab;
 }
 
-public class ForumManager : MonoBehaviour
+public class Forum_Manager : MonoBehaviour
 {
 
     public List<canvas_forum_Prefabs> forumPrefabs = new List<canvas_forum_Prefabs>();

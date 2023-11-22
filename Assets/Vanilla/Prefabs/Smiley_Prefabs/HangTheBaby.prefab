@@ -49,11 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dddc248bec144b928ade7eebce51a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartCanvas: {fileID: 0}
-  angryCanvas: {fileID: 0}
-  laughterCanvas: {fileID: 0}
-  sadnessCanvas: {fileID: 0}
-  surpriseCanvas: {fileID: 0}
+  forumPrefabs: []
 --- !u!1001 &782147698572678587
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -35,6 +35,7 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
 
     private void Update()
     {
+        //reference to the currently  tracked image 
         currentTrackedImage = spawnEmojisScript.CurrentlyTrackedImage;
     }
     
@@ -98,7 +99,7 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
 
     public void OnClick_IncreaseSize(string tag)
     {
-        // Loop through each children inthechildren list
+        // Loop through each children in the children list
         for (int i = 0; i < children.Count; i++)
         {
             // Get the i child

@@ -694,6 +694,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 458215541}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< Updated upstream
       m_Calls:
       - m_Target: {fileID: 1736892430}
         m_TargetAssemblyTypeName: Test_ChooseEmoji, Assembly-CSharp
@@ -707,6 +708,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+      m_Calls: []
+>>>>>>> Stashed changes
 --- !u!114 &458215541
 MonoBehaviour:
   m_ObjectHideFlags: 0
