@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,13 +136,15 @@ GameObject:
   - component: {fileID: 117826080}
   - component: {fileID: 117826079}
   - component: {fileID: 117826078}
+  - component: {fileID: 117826082}
+  - component: {fileID: 117826083}
   m_Layer: 5
   m_Name: EmojiSelector
   m_TagString: EmojiSelector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &117826077
 RectTransform:
   m_ObjectHideFlags: 0
@@ -175,7 +177,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &117826079
 MonoBehaviour:
@@ -238,6 +240,34 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &117826082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117826076}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293a13c62ee53482db4993daa3b08b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emojisSelectorCanvas: {fileID: 117826076}
+  increaseAmount: 50
+  increaseHeartAmount: 25
+--- !u!114 &117826083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117826076}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada600cbce16549709962c2cd469306a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emojisSelectorCanvas: {fileID: 117826076}
 --- !u!1 &215036926
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,10 +302,10 @@ RectTransform:
   m_Father: {fileID: 503602727}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 757, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215036928
 MonoBehaviour:
@@ -321,13 +351,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonClickHandler, Assembly-CSharp
-        m_MethodName: OnSadClick
-        m_Mode: 1
+      - m_Target: {fileID: 1736892430}
+        m_TargetAssemblyTypeName: Test_ChooseEmoji, Assembly-CSharp
+        m_MethodName: onClicked
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -444,7 +474,6 @@ GameObject:
   - component: {fileID: 354650380}
   - component: {fileID: 354650384}
   - component: {fileID: 354650386}
-  - component: {fileID: 354650385}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -515,21 +544,6 @@ MonoBehaviour:
   - {fileID: 5044586734540727721, guid: 539bb1e536040454f9d88827be09b5f7, type: 3}
   - {fileID: 5044586734540727721, guid: 272761431db4340148e8a2a2137af998, type: 3}
   - {fileID: 5044586734540727721, guid: 7f37cd4db0598455abc23b9b2de6b6eb, type: 3}
---- !u!114 &354650385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354650379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 293a13c62ee53482db4993daa3b08b0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  emojisSelectorCanvas: {fileID: 117826076}
-  increaseAmount: 50
-  increaseHeartAmount: 25
 --- !u!114 &354650386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,6 +563,55 @@ MonoBehaviour:
   - {fileID: 5044586734540727721, guid: 6299dfcd9c972430c869da3aa7be4e68, type: 3}
   - {fileID: 5044586734540727721, guid: d6039d5da53be4b8892d116312e8d4cb, type: 3}
   emojisSelectorCanvas: {fileID: 117826076}
+  increaseAmount: 50
+  increaseHeartAmount: 25
+--- !u!1 &408512523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408512525}
+  - component: {fileID: 408512526}
+  m_Layer: 0
+  m_Name: ButtonManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408512525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408512523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 359.51303, y: 888.54974, z: 2.1904907}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &408512526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408512523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293a13c62ee53482db4993daa3b08b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emojisSelectorCanvas: {fileID: 117826076}
+  increaseAmount: 50
+  increaseHeartAmount: 25
 --- !u!1 &458215538
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,10 +646,10 @@ RectTransform:
   m_Father: {fileID: 503602727}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 106, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &458215540
 MonoBehaviour:
@@ -632,13 +695,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 293a13c62ee53482db4993daa3b08b0b, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1736892430}
+        m_TargetAssemblyTypeName: Test_ChooseEmoji, Assembly-CSharp
+        m_MethodName: onClicked
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -716,10 +779,10 @@ RectTransform:
   m_Father: {fileID: 503602727}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -0.002, y: 0.002, z: 0.039}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 540, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &490678398
 MonoBehaviour:
@@ -765,13 +828,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonClickHandler, Assembly-CSharp
-        m_MethodName: OnSurprisedClick
-        m_Mode: 1
+      - m_Target: {fileID: 1736892430}
+        m_TargetAssemblyTypeName: Test_ChooseEmoji, Assembly-CSharp
+        m_MethodName: onClicked
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1274,7 +1337,7 @@ MonoBehaviour:
   m_EventMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_MaxRayIntersections: 1
+  m_MaxRayIntersections: 0
 --- !u!1 &1732155081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,13 +1419,58 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732155081}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1736892429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736892431}
+  - component: {fileID: 1736892430}
+  m_Layer: 0
+  m_Name: ImageEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1736892430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736892429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada600cbce16549709962c2cd469306a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emojisSelectorCanvas: {fileID: 117826076}
+--- !u!4 &1736892431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736892429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 359.51303, y: 888.54974, z: 2.1904907}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1796492671
 GameObject:
@@ -1492,10 +1600,10 @@ RectTransform:
   m_Father: {fileID: 503602727}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 323, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850294914
 MonoBehaviour:
@@ -1541,13 +1649,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonClickHandler, Assembly-CSharp
-        m_MethodName: OnLaughingClick
-        m_Mode: 1
+      - m_Target: {fileID: 1736892430}
+        m_TargetAssemblyTypeName: Test_ChooseEmoji, Assembly-CSharp
+        m_MethodName: onClicked
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1625,10 +1733,10 @@ RectTransform:
   m_Father: {fileID: 503602727}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 974, y: -200}
+  m_SizeDelta: {x: 212, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1973470377
 MonoBehaviour:
@@ -1674,13 +1782,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonClickHandler, Assembly-CSharp
-        m_MethodName: OnAngryClick
-        m_Mode: 1
+      - m_Target: {fileID: 1736892430}
+        m_TargetAssemblyTypeName: Test_ChooseEmoji, Assembly-CSharp
+        m_MethodName: onClicked
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

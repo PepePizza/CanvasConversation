@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -12,7 +13,6 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
     private ARTrackedImageManager trackedImageManager;
     
     private Test_SpawnEmojis spawnEmojisScript;
-    private string buttonTag;
     private List<Transform> children;
 
     //public CanvasGroup canvasGroup;
@@ -23,6 +23,8 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
     public float increaseHeartAmount = 25f;
 
     private ARTrackedImage currentTrackedImage;
+
+    private Button buttonComponent;
 
     private void Awake()
     {
@@ -39,11 +41,19 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick (PointerEventData eventData)
     {
         // Get the tag of the clicked button's GameObject
-        buttonTag = eventData.pointerPress.tag;
-        OnClick_IncreaseSize();
-        
+        string buttonTag = eventData.pointerPress.tag;
+        emojisSelectorCanvas.SetActive(false);
+        spawnEmojisScript.react_to_current_image();
     }
 
+    public void onClicked(Button button)
+    {
+        string button_tag = button.name;
+        emojisSelectorCanvas.SetActive(false);
+        spawnEmojisScript.react_to_current_image();
+    }
+
+    
     private void OnEnable()
     {
         //attach event handler when tracked images change
@@ -86,7 +96,7 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
         return children;
     }
 
-    public void OnClick_IncreaseSize()
+    public void OnClick_IncreaseSize(string tag)
     {
         // Loop through each children inthechildren list
         for (int i = 0; i < children.Count; i++)
@@ -95,9 +105,9 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
             Transform child = children[i];
 
             // Check if the child's tag matches the target tag
-            if (child.CompareTag(buttonTag))
+            if (child.CompareTag(tag))
             {
-                if (buttonTag == "Heart")
+                if (tag == "Heart")
                 {
                     IncreaseHeartSize(child.gameObject);
                 }
@@ -110,6 +120,8 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
         }
         
         emojisSelectorCanvas.SetActive(false);
+        spawnEmojisScript.react_to_current_image();
+        
     }
     
     void IncreaseSize(GameObject obj)
@@ -124,4 +136,5 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
         obj.transform.localScale = new Vector3(currentSize.x + increaseHeartAmount, currentSize.y + increaseHeartAmount, currentSize.z + increaseHeartAmount);
     }
 }
+
 
