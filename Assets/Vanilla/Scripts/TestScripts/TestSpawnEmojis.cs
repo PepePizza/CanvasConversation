@@ -5,7 +5,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
 [RequireComponent(typeof(ARTrackedImageManager))]
-public class Test_SpawnEmojis : MonoBehaviour
+public class TestSpawnEmojis : MonoBehaviour
 {
     //reference to AR tracked image manager component 
     private ARTrackedImageManager trackedImageManager;
@@ -95,7 +95,7 @@ public class Test_SpawnEmojis : MonoBehaviour
                 //check if the currently tracked image has changed
                 if (trackedImage.trackingState == TrackingState.Tracking)
                 {
-                    children = GetChildren(transform,  true);
+                    children = GetChildren(trackedImage.transform,  true);
                 }
             }
         }
@@ -122,7 +122,10 @@ public class Test_SpawnEmojis : MonoBehaviour
             {
                 //set the prefab to not active
                 instantiated_smileyPreafbs[trackedImage.referenceImage.name].SetActive(false);
-           
+            }
+
+            if (emojisSelectorCanvas.activeSelf)
+            {
                 //set the emojiselector to not active 
                 emojisSelectorCanvas.SetActive(false);
             }
@@ -148,7 +151,7 @@ public class Test_SpawnEmojis : MonoBehaviour
 
     public void OnClick_IncreaseSize(string tag)
     {
-        tag = Test_ChooseEmoji.buttontag;
+        tag = Test_ChooseEmoji.buttonName;
         
         // Loop through each children inthechildren list
         for (int i = 0; i < children.Count; i++)

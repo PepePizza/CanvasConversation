@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7598000365418555957}
-  - component: {fileID: 7086881253463569156}
+  - component: {fileID: 9088392165125264567}
   m_Layer: 0
   m_Name: HangTheBaby
   m_TagString: Untagged
@@ -37,19 +37,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7086881253463569156
+--- !u!114 &9088392165125264567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5044586734540727721}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dddc248bec144b928ade7eebce51a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forumPrefabs: []
+  forumPrefabs:
+  - corrosponding_emoji_tag: Anger
+    forum_prefab: {fileID: 8654139528967298760, guid: 565b6d5177ec14199b6c8fd3fc7514c4,
+      type: 3}
+  - corrosponding_emoji_tag: Laughter
+    forum_prefab: {fileID: 6502280733266252483, guid: c89bb183467474e66bef04fbc9ee62ea,
+      type: 3}
+  - corrosponding_emoji_tag: Heart
+    forum_prefab: {fileID: 3635174206527998075, guid: 953f9197161a14494a52e80ebe078b03,
+      type: 3}
+  - corrosponding_emoji_tag: Sadness
+    forum_prefab: {fileID: 2467128509155545229, guid: 1c03e252ddd88421480cf4af8e937d01,
+      type: 3}
+  - corrosponding_emoji_tag: Surprise
+    forum_prefab: {fileID: 6604226262300430526, guid: b724fb64b700b4da0a9ebbccf0087a1a,
+      type: 3}
 --- !u!1001 &782147698572678587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90,7 +105,7 @@ PrefabInstance:
     - target: {fileID: 2097058189601238401, guid: 2c97f2c5810d146b5a2e4bc0191870e6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0066717444
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2097058189601238401, guid: 2c97f2c5810d146b5a2e4bc0191870e6,
         type: 3}

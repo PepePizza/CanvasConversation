@@ -12,7 +12,7 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
     //reference to AR tracked image manager component 
     private ARTrackedImageManager trackedImageManager;
     
-    private Test_SpawnEmojis spawnEmojisScript;
+    private TestSpawnEmojis spawnEmojisScript;
     private List<Transform> children;
 
     //public CanvasGroup canvasGroup;
@@ -30,7 +30,7 @@ public class ChooseEmoji : MonoBehaviour, IPointerClickHandler
     {
         //reference to the tracked image manager component
         trackedImageManager = GetComponent<ARTrackedImageManager>();
-        spawnEmojisScript = GetComponent<Test_SpawnEmojis>();
+        spawnEmojisScript = GetComponent<TestSpawnEmojis>();
     }
 
     private void Update()

@@ -10,20 +10,18 @@ using UnityEngine.XR.ARSubsystems;
 public class Test_ChooseEmoji : MonoBehaviour
 {
     
-    private Test_SpawnEmojis spawnEmojisScript;
+    private TestSpawnEmojis spawnEmojisScript;
 
     //public CanvasGroup canvasGroup;
     public GameObject emojisSelectorCanvas;
     
     private ARTrackedImage currentTrackedImage;
 
-    private Button buttonComponent;
-
-    public static string buttontag;
+    public static string buttonName;
 
     private void Awake()
     {
-        spawnEmojisScript = GetComponent<Test_SpawnEmojis>();
+        spawnEmojisScript = GetComponent<TestSpawnEmojis>();
     }
 
     private void Update()
@@ -41,7 +39,7 @@ public class Test_ChooseEmoji : MonoBehaviour
 
     public void onClicked(Button button)
     {
-        buttontag = button.name;
+        buttonName = button.name;
         emojisSelectorCanvas.SetActive(false);
         spawnEmojisScript.react_to_current_image();
     }

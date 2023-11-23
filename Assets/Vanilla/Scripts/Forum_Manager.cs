@@ -19,19 +19,17 @@ public class Forum_Manager : MonoBehaviour
 
     public List<canvas_forum_Prefabs> forumPrefabs = new List<canvas_forum_Prefabs>();
     
-    private String[] emoji_tags = new String[]{"Heart", "Angry", "Laughter", "Sadness", "Surprise"};
+    private String[] emoji_tags = new String[]{"Heart", "Anger", "Laughter", "Sadness", "Surprise"};
     
     private Camera camera;
     private GameObject selectedCanvas;
-    private ChooseEmoji chooseEmojiScript;
-    
+
     //Dictionary array of created prefabs
     private Dictionary<string, GameObject> instantiated_forumPrefabs = new Dictionary<string, GameObject>();
 
     private void Start()
     {
-        chooseEmojiScript = GetComponent<ChooseEmoji>();
-        
+
         camera = Camera.main;
 
         //instantiated and deactivates all canvases at the start
@@ -40,16 +38,14 @@ public class Forum_Manager : MonoBehaviour
             var new_forumGameobject = Instantiate(current_forum.forum_prefab);
 
             instantiated_forumPrefabs[current_forum.corrosponding_emoji_tag] = new_forumGameobject;
+            
             new_forumGameobject.gameObject.SetActive(false);
         }
     }
 
     private void Update()
     {
-        if (!chooseEmojiScript.emojisSelectorCanvas.activeSelf)
-        {
-            Select_Deselect_forum();
-        }
+        Select_Deselect_forum();
     }
 
     private void Select_Deselect_forum()
@@ -71,11 +67,6 @@ public class Forum_Manager : MonoBehaviour
                         //activate the canvas corresponding to the emoji tag
                         instantiated_forumPrefabs[tag].gameObject.SetActive(true);
                         selectedCanvas = instantiated_forumPrefabs[tag];
-                    }
-                    //set the canvas to not active if the back button is pressed
-                    else if (hit.collider.gameObject != null && hit.collider.gameObject.CompareTag("GoBackButton"))
-                    {
-                        selectedCanvas.gameObject.SetActive(false);
                     }
                 }
             }

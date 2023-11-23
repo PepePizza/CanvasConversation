@@ -13,6 +13,7 @@ TagManager:
   - EmojisParent
   - EmojiSelector
   - Heart
+  - GoBackButton
   layers:
   - Default
   - TransparentFX

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7598000365418555957}
-  - component: {fileID: 5537624930165043000}
+  - component: {fileID: 3034949313758557568}
   m_Layer: 0
   m_Name: BallarinaShit
   m_TagString: Untagged
@@ -37,33 +37,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5537624930165043000
+--- !u!114 &3034949313758557568
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5044586734540727721}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dddc248bec144b928ade7eebce51a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   forumPrefabs:
-  - corrosponding_emoji_tag: Angry
-    forum_prefab: {fileID: 7016819159188066078, guid: 7ae44f14a750341b3821f3a9afe0548e,
-      type: 3}
-  - corrosponding_emoji_tag: Heart
-    forum_prefab: {fileID: 1807356873550828315, guid: 0c2628b95fb9f44668d0af857a2d0452,
+  - corrosponding_emoji_tag: Anger
+    forum_prefab: {fileID: 9071681268039142911, guid: d9232b30e4bdb4c33adfc22ab16e8925,
       type: 3}
   - corrosponding_emoji_tag: Laughter
-    forum_prefab: {fileID: 5727529870669639666, guid: 76111194bdef94f05b4ead306dd878dc,
+    forum_prefab: {fileID: 3198379405539521417, guid: 5d1e898d4ec0f40eb840951a8516dc63,
+      type: 3}
+  - corrosponding_emoji_tag: Heart
+    forum_prefab: {fileID: 2627877449223898859, guid: 04131040580b5446690d0bff0f4c01ce,
       type: 3}
   - corrosponding_emoji_tag: Sadness
-    forum_prefab: {fileID: 5429889804933795956, guid: 093ca77e47f3143a7a7fc08e81aef559,
+    forum_prefab: {fileID: 8385778960648125907, guid: 5ca1ed3d2dabd4853b303dcda2852460,
       type: 3}
   - corrosponding_emoji_tag: Surprise
-    forum_prefab: {fileID: 1554025040461819544, guid: 72e62edb9ff22453c965965cf31026cc,
+    forum_prefab: {fileID: 3052014315345033246, guid: 4f15141b435164a0ebb0198f91c083a0,
       type: 3}
 --- !u!1001 &782147698572678587
 PrefabInstance:
@@ -105,7 +105,7 @@ PrefabInstance:
     - target: {fileID: 2097058189601238401, guid: 2c97f2c5810d146b5a2e4bc0191870e6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0066717444
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2097058189601238401, guid: 2c97f2c5810d146b5a2e4bc0191870e6,
         type: 3}
