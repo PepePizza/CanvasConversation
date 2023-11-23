@@ -110,6 +110,7 @@ public class Comment : MonoBehaviour
         replyPrefab.SetActive(true);
     }
     
+    //DER HERUNDER BRUGER VI IKKE//
     public void OnTopLikeButtonClick()
     {
         if (numberofTopLikes != null)
