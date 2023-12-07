@@ -77,23 +77,24 @@ public class SpawnEmojis : MonoBehaviour
                 image_reaction_bool[imageName] = false;
                 
             }
-            else if (image_reaction_bool[imageName])
-            {
-                
-            }
         }
 
-        //set instatiated prefabs to active/ not active depending on if their image is currently being tracked 
+        //set instatiated prefabs to active depending on if their image is currently being tracked 
         foreach (var trackedImage in eventArgs.updated)
         {
+            //chehck if the image has been reacted to
             if (image_reaction_bool[trackedImage.referenceImage.name])
             {
+                //Set the prefabs corrosponding to the currently tracked image to true 
                 instantiated_smileyPreafbs[trackedImage.referenceImage.name].SetActive(trackedImage.trackingState == TrackingState.Tracking);
             
                 // Update the CurrentlyTrackedImage when a new image is tracked
                 if (trackedImage.trackingState == TrackingState.Tracking)
                 {
+                    //update the currently tracked image
                     CurrentlyTrackedImage = trackedImage;
+                    
+                    //get the children of  the currently tracked image. 
                     children = GetChildren(CurrentlyTrackedImage.transform,  true);
                 }
             }
@@ -118,8 +119,9 @@ public class SpawnEmojis : MonoBehaviour
 
     public void react_to_current_image()
     {
+        //set the reaction bool of the current image to true 
         image_reaction_bool[CurrentlyTrackedImage.referenceImage.name] = true;
-
+        
         string currentImageName = CurrentlyTrackedImage.referenceImage.name;
         
         //loop over the array of prefabs 
@@ -139,6 +141,7 @@ public class SpawnEmojis : MonoBehaviour
                 //ad the instantiated prefab to array with instantiated prefabs
                 instantiated_smileyPreafbs[currentImageName] = new_smileyPrefab;
                 
+                //get the children of the currently tracked image
                 children = GetChildren(CurrentlyTrackedImage.transform,  true);
             }
         }
@@ -163,7 +166,7 @@ public class SpawnEmojis : MonoBehaviour
     
     public void OnClick_IncreaseSize(string buttonName)                                                                                                              
     {
-        // Loop through each children inthechildren list                                                                                                      
+        // Loop through each children in the children list                                                                                                      
         for (int i = 0; i < children.Count; i++)                                                                                                              
         {                                                                                                                                                     
          // Get the i child                                                                                                                                
@@ -171,11 +174,12 @@ public class SpawnEmojis : MonoBehaviour
                                                                                                                                                           
             // Check if the child's tag matches the target tag                                                                                                
             if (child.CompareTag(buttonName))                                                                                                                        
-            {                                                                                                                                                 
+            {
+                
                 if (buttonName == "Heart")                                                                                                                           
                 {                                                                                                                                             
                     IncreaseHeartSize(child.gameObject);                                                                                                      
-                }                                                                                                                                             
+                }
                 else                                                                                                                                          
                 {                                                                                                                                             
                     IncreaseSize(child.gameObject);                                                                                                           
@@ -189,11 +193,11 @@ public class SpawnEmojis : MonoBehaviour
         Vector3 currentSize = obj.transform.localScale;                                                                                                       
         obj.transform.localScale = new Vector3(currentSize.x + increaseAmount, currentSize.y + increaseAmount, currentSize.z + increaseAmount);               
     }                                                                                                                                                         
-                                                                                                                                                          
+    
+    
     void IncreaseHeartSize(GameObject obj)                                                                                                                    
     {                                                                                                                                                         
      Vector3 currentSize = obj.transform.localScale;                                                                                                       
         obj.transform.localScale = new Vector3(currentSize.x + increaseHeartAmount, currentSize.y + increaseHeartAmount, currentSize.z + increaseHeartAmount);
     }
-    
 }

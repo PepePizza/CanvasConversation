@@ -94,7 +94,6 @@ GameObject:
   - component: {fileID: 6277858571234272060}
   - component: {fileID: 5806783030658991315}
   - component: {fileID: 5806783030658991314}
-  - component: {fileID: 5389998854047992588}
   - component: {fileID: 1695962962998359355}
   m_Layer: 0
   m_Name: Heart
@@ -147,18 +146,6 @@ MonoBehaviour:
   emojisCanvas: {fileID: 0}
   forum: {fileID: 0}
   BackButton: {fileID: 0}
---- !u!114 &5389998854047992588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6653153344149731718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dbd19eeb6e9afb4cb98801481c215d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1695962962998359355
 MeshRenderer:
   m_ObjectHideFlags: 0

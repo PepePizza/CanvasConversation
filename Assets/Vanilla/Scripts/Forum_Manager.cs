@@ -32,7 +32,7 @@ public class Forum_Manager : MonoBehaviour
 
         camera = Camera.main;
 
-        //instantiated and deactivates all canvases at the start
+        //instantiates and deactivates all canvases at the start
         foreach (var current_forum in forumPrefabs)
         {
             var new_forumGameobject = Instantiate(current_forum.forum_prefab);
@@ -50,7 +50,7 @@ public class Forum_Manager : MonoBehaviour
 
     private void Select_Deselect_forum()
     {
-        //Select emoji 
+        //check if its a valid touch
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
             //detect touch-position and create ray from it 
